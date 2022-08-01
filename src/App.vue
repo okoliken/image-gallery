@@ -3,19 +3,16 @@ import { reactive, ref } from "@vue/reactivity";
 import Navbar from "../src/components/Navbar.vue";
 import loading from "../src/components/loading.vue";
 // import { watch } from "vue";
-
+import type { Ref } from 'vue'
 import axios from "axios";
 
 const AccessKey = ref<string>("HOqE_XqwI_GRjFs6T1G2hA8LS46sAUFISQOHRCaHmKU");
 
-import CoolLightBox from "vue-cool-lightbox";
 import "vue-cool-lightbox/dist/vue-cool-lightbox.min.css";
 import { watch } from "@vue/runtime-core";
 
 const data = ref([]);
-const lightboxImg = ref([]);
-
-// const reactivelightboxImg = toRefs(lightboxImg);
+const lightboxImg: Ref<string[]> = ref([]);
 
 const Search = ref<string>("");
 
@@ -29,8 +26,7 @@ const loader = ref<boolean>(false);
 watch(Search, () => {
   if (error.value !== "") {
     error.value = "";
-  }
-  else return
+  } else return;
 });
 
 const clear = () => {
@@ -53,7 +49,7 @@ const getSearchResult = (search: String) => {
       `https://api.unsplash.com/search/photos?page=1&query=${search}&client_id=${AccessKey.value}`
     )
     .then((res) => {
-      res.data.results.forEach((element) => {
+      res.data.results.forEach((element: any) => {
         lightboxImg.value.push(element.urls.full);
       });
 

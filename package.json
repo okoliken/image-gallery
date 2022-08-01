@@ -13,7 +13,6 @@
     "axios": "^0.27.2",
     "vue": "^3.2.37",
     "vue-axios": "^3.4.1",
-    "vue-blurhash": "^0.1.4",
     "vue-cool-lightbox": "^2.7.5",
     "vue-easy-lightbox": "^1.7.0",
     "vue-masonry": "^0.16.0",

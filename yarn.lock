@@ -1489,11 +1489,6 @@ vue-axios@^3.4.1:
   resolved "https://registry.npmjs.org/vue-axios/-/vue-axios-3.4.1.tgz"
   integrity sha512-8YZYUOQrBEJktxoQtrM4rr2LfVcDaWfJqv8MqtLlgLlkuBvCYKFSZSo6AXQ4YcCzdgccDqstmuaEh68lcH9xWA==
 
-vue-blurhash@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.npmjs.org/vue-blurhash/-/vue-blurhash-0.1.4.tgz"
-  integrity sha512-B76GgfHXHkdmYgAfI2rZl3BgCMD9OxAgn4Jw2Ro0a8ZoAKa6gqTWUrTo5EGXOftm/EKuMYi1Cc+UcAvV0jnoRw==
-
 vue-cool-lightbox@^2.7.5:
   version "2.7.5"
   resolved "https://registry.npmjs.org/vue-cool-lightbox/-/vue-cool-lightbox-2.7.5.tgz"

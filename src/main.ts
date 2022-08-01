@@ -13,10 +13,8 @@ import VueAxios from 'vue-axios'
 
 
 
-import VueBlurHash from 'vue-blurhash/package.json'
 
 // Import css if you want to use image fade transition
-import 'vue-blurhash/dist/vue-blurhash.css'
 
 import MasonryWall from '@yeger/vue-masonry-wall'
 
@@ -26,7 +24,6 @@ app.use(VueAxios, axios)
 
 app.use(VueEasyLightbox)
 
-app.use(VueBlurHash)
 
 app.use(MasonryWall)
 
