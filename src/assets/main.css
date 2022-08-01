@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.loading-2 {
+  display: flex;
+  justify-content: center;
+ 
+  height: 100vh;
+}
+
+.loading-2--full-height {
+  align-items: center;
+  height: 100%;
+  background-color: #fff;
+  width: 100%;
+}
+
+.loading-2::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: #333335;
+  opacity: 0.5;
+  border-radius: 50%;
+  animation: loading-2 0.3s ease-in-out infinite alternate;
+}
+
+@keyframes loading-2 {
+  /* Safari support */
+  from {
+    opacity: 0;
+    transform: scale(1);
+  }
+  
+  to {
+    opacity: 1;
+    transform: scale(1.75);
+  }
+}
+
+
+/* we will explain what these classes do next! */
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}

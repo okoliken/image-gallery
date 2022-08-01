@@ -1,0 +1,222 @@
+/*!
+  * Vuesax v4.0.1-alpha.24 🖖 (https://lusaxweb.github.io/vuesax/)
+  * Forged by Luis Daniel Rovira
+  * Released under the MIT License.
+  * Donate: https://www.patreon.com/bePatron?c=1567892
+  * © 2019, Lusaxweb. (https://lusaxweb.net)
+  */
+:root {
+  --vs-primary: 25, 91, 255;
+  --vs-warn: 255, 186, 0;
+  --vs-danger: 255,71,87;
+  --vs-success: 70,201,58;
+  --vs-dark: 30,30,30;
+  --vs-light: 244,247,248;
+  --vs-color: 17,18,20;
+  --vs-facebook: 59, 89, 153;
+  --vs-twitter: 29, 161, 242;
+  --vs-youtube: 255, 0, 0;
+  --vs-pinterest: 189, 8, 28;
+  --vs-linkedin: 0, 119, 181;
+  --vs-snapchat: 255, 252, 0;
+  --vs-whatsapp: 37, 211, 102;
+  --vs-tumblr: 54, 70, 93;
+  --vs-reddit: 255, 69, 0;
+  --vs-spotify: 30, 215, 96;
+  --vs-amazon: 255, 153, 0;
+  --vs-medium: 2, 184, 117;
+  --vs-vimeo: 26, 183, 234;
+  --vs-skype: 0, 175, 240;
+  --vs-dribbble: 234, 76, 137;
+  --vs-slack: 74, 21, 75;
+  --vs-yahoo: 67, 2, 151;
+  --vs-twitch: 100, 65, 164;
+  --vs-discord: 114, 137, 218;
+  --vs-telegram: 0, 136, 204;
+  --vs-google-plus: 219, 68, 55;
+  --vs-messenger: 0, 132, 255;
+  --vs-background: 255, 255, 255;
+  --vs-text: 44, 62, 80;
+  --vs-gray-1: 249, 252, 253;
+  --vs-gray-2: 244, 247, 248;
+  --vs-gray-3: 240, 243, 244;
+  --vs-gray-4: 230, 233, 234;
+}
+
+[class*="--primary"] {
+  --vs-color: var(--vs-primary);
+}
+
+[class*="--default"] {
+  --vs-color: var(--vs-primary);
+}
+
+[class*="--danger"] {
+  --vs-color: var(--vs-danger);
+}
+
+[class*="--success"] {
+  --vs-color: var(--vs-success);
+}
+
+[class*="--dark"] {
+  --vs-color: var(--vs-dark);
+}
+
+[class*="--warn"] {
+  --vs-color: var(--vs-warn);
+}
+
+:root {
+  --vs-shadow-opacity: .05;
+  --vs-radius: 20px;
+  --vs-zindex-1: 100000;
+  --vs-zindex-2: 99000;
+  --vs-zindex-3: 98000;
+  --vs-zindex-4: 97000;
+  --vs-background-opacity: .2;
+}
+
+[vs-theme=dark] {
+  --vs-background: 30, 32, 35;
+  --vs-text: 255, 255, 255;
+  --vs-gray-1: 24, 25, 28;
+  --vs-gray-2: 20, 20, 23;
+  --vs-gray-3: 15, 16, 19;
+  --vs-gray-4: 10, 11, 14;
+  --vs-shadow-opacity: .3;
+  --vs-dark: 0, 0, 0;
+  --vs-background-opacity: .6;
+}
+[vs-theme=dark] .vs-pagination-content.vs-component-dark .vs-pagination__active {
+  --vs-color: 255, 255, 255;
+  color: rgba(var(--vs-gray-3), 1);
+}
+[vs-theme=dark] .vs-button.vs-component-dark.vs-button--transparent {
+  color: rgba(var(--vs-text), 1) !important;
+}
+[vs-theme=dark] .vs-button.vs-component-dark.vs-button--transparent:hover:before {
+  background: rgba(var(--vs-color), 0.2);
+}
+[vs-theme=dark] .vs-button.vs-component-dark.vs-button--transparent.vs-button--active:before {
+  background: rgba(var(--vs-color), var(--vs-background-opacity));
+}
+[vs-theme=dark] .vs-ripple, [vs-theme=dark] .vs-ripple-invert, [vs-theme=dark] .vs-ripple-content {
+  --vs-color: 0,0,0;
+}
+[vs-theme=dark] .vs-loading {
+  --vs-background: 0, 0, 0;
+}
+[vs-theme=dark] .vs-input-parent--state-dark {
+  --vs-dark: 255, 255, 255 !important;
+}
+[vs-theme=dark] .vs-input-parent--state-dark .vs-input {
+  background: #000 !important;
+}
+[vs-theme=dark] .vs-component-dark {
+  --vs-color: 0, 0, 0 !important;
+}
+[vs-theme=dark] .vs-component-dark .vs-avatar {
+  color: #fff !important;
+}
+[vs-theme=dark] .vs-component-dark.vs-alert {
+  --vs-color: 0, 0, 0 !important;
+  background: rgba(var(--vs-color), 1) !important;
+  color: rgba(var(--vs-text), 1) !important;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+[disabled] {
+  opacity: 0.6;
+}
+
+input {
+  outline: none;
+}
+
+input, textarea, button, select, a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+[class*=vs-] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  list-style: none;
+}
+
+.vs-ripple-content {
+  --vs-color: inherit;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  border-radius: inherit;
+  z-index: -1;
+}
+.vs-ripple-content .vs-ripple {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  opacity: 0;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: radial-gradient(circle, rgba(var(--vs-color), 0.05), rgba(var(--vs-color), 0.6));
+}
+.vs-ripple-content .vs-ripple--solid {
+  background: rgba(var(--vs-color), 1);
+  opacity: 1;
+}
+.vs-ripple-content .vs-ripple-invert {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  opacity: 0;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-image: radial-gradient(circle, rgba(var(--vs-color), 0.5), rgba(var(--vs-color), 0));
+}
+.vs-ripple-content .vs-ripple-cut-1 {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transform: translate(-100%, -50%) skew(20deg);
+          transform: translate(-100%, -50%) skew(20deg);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.vs-ripple-content .vs-ripple-cut-2 {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transform: translate(0%, -50%) skew(20deg);
+          transform: translate(0%, -50%) skew(20deg);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.vs-remove-transition *, .vs-remove-transition *:after, .vs-remove-transition *:before {
+  -webkit-transition: all 0s !important;
+  transition: all 0s !important;
+}

@@ -1,0 +1,7 @@
+/*!
+  * Vuesax v4.0.1-alpha.24 🖖 (https://lusaxweb.github.io/vuesax/)
+  * Forged by Luis Daniel Rovira
+  * Released under the MIT License.
+  * Donate: https://www.patreon.com/bePatron?c=1567892
+  * © 2019, Lusaxweb. (https://lusaxweb.net)
+  */.vs-select__option-group{padding-left:10px;border-bottom:2px solid rgba(var(--vs-gray-1),1);position:relative;overflow:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}.vs-select__option-group:last-child{border:0}.vs-select__option-group.hiddenOptionGroup{border-bottom:0 solid rgba(var(--vs-gray-1),1)}.vs-select__option-group.hiddenOptionGroup h5{padding:0;max-height:0}.vs-select__option-group h5{max-height:28px;-webkit-transition:all .25s ease;transition:all .25s ease;opacity:.5;margin:0;padding:7px 0;font-size:.7rem;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;overflow:hidden}.vs-select__option-group h5 *{pointer-events:none}

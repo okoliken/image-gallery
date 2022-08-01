@@ -1,0 +1,7 @@
+/*!
+  * Vuesax v4.0.1-alpha.24 🖖 (https://lusaxweb.github.io/vuesax/)
+  * Forged by Luis Daniel Rovira
+  * Released under the MIT License.
+  * Donate: https://www.patreon.com/bePatron?c=1567892
+  * © 2019, Lusaxweb. (https://lusaxweb.net)
+  */.vs-table-content{--vs-color:var(--vs-primary);width:100%;border-radius:16px}.vs-table{width:100%;font-size:.9rem;margin:0;overflow:auto}.vs-table table{margin:0;border-collapse:collapse;width:100%;min-width:500px;border:0}.vs-table.striped .vs-table__tr:nth-child(2n){background:rgba(var(--vs-gray-1),1)!important}.vs-table_not-found{display:none;padding:20px;text-align:center;width:100%}.vs-table_not-found tr{text-align:center}.vs-table_not-found tr td{padding:20px;border:0}.vs-table__tbody:empty{display:none;background:#000}.vs-table__tbody:empty~.vs-table_not-found{display:table-row-group}.vs-table.isSelectedValue tr{cursor:pointer}.vs-table__footer{padding:8px 10px;background:rgba(var(--vs-gray-2),1);border-radius:0 0 14px 14px}.vs-table__header{width:100%;padding:10px;background:rgba(var(--vs-gray-2),1);border-radius:14px 14px 0 0}.vs-table__header~.vs-table .vs-table__th:first-child,.vs-table__header~.vs-table .vs-table__th:last-child{border-radius:0}.vs-table__thead{width:100%}.vs-table__thead .vs-table__th{background:rgba(var(--vs-gray-2),1)}.vs-table__thead .vs-table__th:first-child{border-radius:14px 0 0 0}.vs-table__thead .vs-table__th:last-child{border-radius:0 14px 0 0}
