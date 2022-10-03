@@ -2,14 +2,17 @@
 import { reactive, ref } from "@vue/reactivity";
 import Navbar from "../src/components/Navbar.vue";
 import loading from "../src/components/loading.vue";
-// import { watch } from "vue";
+import "vue-cool-lightbox/dist/vue-cool-lightbox.min.css";
+import { watch } from "vue";
+
+
+
 import type { Ref } from 'vue'
 import axios from "axios";
 
-const AccessKey = ref<string>("HOqE_XqwI_GRjFs6T1G2hA8LS46sAUFISQOHRCaHmKU");
+const AccessKey = ref("HOqE_XqwI_GRjFs6T1G2hA8LS46sAUFISQOHRCaHmKU");
 
-import "vue-cool-lightbox/dist/vue-cool-lightbox.min.css";
-import { watch } from "@vue/runtime-core";
+
 
 const data = ref([]);
 const lightboxImg: Ref<string[]> = ref([]);
@@ -127,6 +130,7 @@ const getSearchResult = (search: String) => {
           <template #default="{ item, index }">
             <img
               alt=""
+              loading="lazy"
               class="cursor-pointer"
               :src="`${item.urls.full}`"
               @click="() => showImg(index)"
